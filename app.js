@@ -3,7 +3,7 @@ var path = require("path");
 var bodyParser = require("body-parser");
 var cookieParser = require("cookie-parser");
 var nodemailer = require("nodemailer");
-var hbs = require("express-handlebars");
+var exphbs = require("express-handlebars");
 var logger = require("morgan");
 
 var app = express();
@@ -11,20 +11,12 @@ var app = express();
 // View engine is the template you are using
 // Can define the layouts
 // dirname always points to root directory
-app.engine(
-  "handlebars",
-  hbs({
-    extname: "hbs",
-    defaultLayout: "layout",
-    layoutsDir: __dirname + "/views/layouts",
-  })
-);
 
+app.engine("handlebars", exphbs());
+app.set("view engine", "handlebars");
 // Folder name is views
-app.set("views", path.join(__dirname, "views"));
 
 // Set it up as the view engine
-app.set("view engine", "hbs");
 
 // Parses json if you want
 app.use(bodyParser.json());
