@@ -1,0 +1,19 @@
+{
+  "name": "dropbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.7-alpha.4",
+    "jest": "^26.1.0",
+    "node-fetch": "^2.6.0",
+    "nodemon": "^2.0.4"
+  }
+}

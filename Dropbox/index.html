@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sam space</title>
+
+    <!-- fontawesome -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+      integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./public/main.css" />
+  </head>
+
+  <body>
+    <!--Header Section on Page-->
+    <header>
+      <i class="fas fa-globe-asia"></i>
+      <h1>
+        Sam's space
+      </h1>
+    </header>
+
+    <!--Sidebar Section on Page-->
+    <section id="sidebar">
+      <button id="uploadButton">Please Upload File</button>
+    </section>
+
+    <!--Fileupload Section on Page-->
+    <section id="body">
+      <div>
+        <i class="fas fa-folder"></i>
+      </div>
+      <div>
+        <i class="fas fa-folder"></i>
+      </div>
+      <div>
+        <i class="fas fa-folder"></i>
+      </div>
+      <div>
+        <i class="fas fa-folder"></i>
+      </div>
+      <div>
+        <i class="fas fa-folder"></i>
+      </div>
+      <div>
+        <i class="fas fa-folder"></i>
+      </div>
+      <div>
+        <i class="fas fa-folder"></i>
+      </div>
+      <div>
+        <i class="fas fa-folder"></i>
+      </div>
+      <div>
+        <i class="fas fa-folder"></i>
+      </div>
+      <div>
+        <i class="fas fa-folder"></i>
+      </div>
+    </section>
+
+    <!--Upload form Section on page, this is hidden a the beginning, we use jquery events to unhide and hide once more-->
+    <section id="uploadSec">
+      <div>
+        <i class="fas fa-times-circle"></i>
+        <form
+          action="/upload"
+          method="post"
+          id="uploadForm"
+          enctype="multipart/form-data"
+        >
+          <input type="file" name="foo" id="upload" />
+          <label for="upload" id="uploadLabel">Choose a file</label>
+          <input type="submit" value="Upload" id="submit" />
+        </form>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./public/main.js"></script>
+  </body>
+</html>
