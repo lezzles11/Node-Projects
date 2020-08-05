@@ -10,7 +10,7 @@
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
-    "express-fileupload": "^1.1.7-alpha.4",
+    "express-fileupload": "^1.1.9",
     "fileupload": "^1.0.0",
     "hbs": "~4.0.4",
     "http-errors": "~1.6.3",
